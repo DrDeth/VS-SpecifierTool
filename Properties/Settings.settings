@@ -1,0 +1,108 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SpecifierTool.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UPROPERTY_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Const&lt;/string&gt;
+  &lt;string&gt;GlobalConfig&lt;/string&gt;
+  &lt;string&gt;Localized&lt;/string&gt;
+  &lt;string&gt;Transient&lt;/string&gt;
+  &lt;string&gt;DuplicateTransient&lt;/string&gt;
+  &lt;string&gt;NonPIETransient&lt;/string&gt;
+  &lt;string&gt;Ref&lt;/string&gt;
+  &lt;string&gt;Export&lt;/string&gt;
+  &lt;string&gt;EditInline&lt;/string&gt;
+  &lt;string&gt;NoClear&lt;/string&gt;
+  &lt;string&gt;EditFixedSize&lt;/string&gt;
+  &lt;string&gt;Replicated&lt;/string&gt;
+  &lt;string&gt;RepRetry&lt;/string&gt;
+  &lt;string&gt;NotReplicated&lt;/string&gt;
+  &lt;string&gt;Interp&lt;/string&gt;
+  &lt;string&gt;NonTransactional&lt;/string&gt;
+  &lt;string&gt;Instanced&lt;/string&gt;
+  &lt;string&gt;BlueprintAssignable&lt;/string&gt;
+  &lt;string&gt;SimpleDisplay&lt;/string&gt;
+  &lt;string&gt;AdvancedDisplay&lt;/string&gt;
+  &lt;string&gt;EditAnywhere&lt;/string&gt;
+  &lt;string&gt;EditInstanceOnly&lt;/string&gt;
+  &lt;string&gt;EditDefaultsOnly&lt;/string&gt;
+  &lt;string&gt;VisibleAnywhere&lt;/string&gt;
+  &lt;string&gt;VisibleInstanceOnly&lt;/string&gt;
+  &lt;string&gt;VisibleDefaultsOnly&lt;/string&gt;
+  &lt;string&gt;BlueprintReadOnly&lt;/string&gt;
+  &lt;string&gt;BlueprintReadWrite&lt;/string&gt;
+  &lt;string&gt;AssetRegistrySearchable&lt;/string&gt;
+  &lt;string&gt;SaveGame&lt;/string&gt;
+  &lt;string&gt;BlueprintCallable&lt;/string&gt;
+  &lt;string&gt;BlueprintAuthorityOnly&lt;/string&gt;
+  &lt;string&gt;TextExportTransient&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="UFUNCTION_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;BlueprintImplementableEvent&lt;/string&gt;
+  &lt;string&gt;BlueprintNativeEvent&lt;/string&gt;
+  &lt;string&gt;SealedEvent&lt;/string&gt;
+  &lt;string&gt;Exec&lt;/string&gt;
+  &lt;string&gt;Server&lt;/string&gt;
+  &lt;string&gt;Client&lt;/string&gt;
+  &lt;string&gt;NetMulticast&lt;/string&gt;
+  &lt;string&gt;Reliable&lt;/string&gt;
+  &lt;string&gt;Unreliable&lt;/string&gt;
+  &lt;string&gt;BlueprintPure&lt;/string&gt;
+  &lt;string&gt;BlueprintCallable&lt;/string&gt;
+  &lt;string&gt;BlueprintAuthorityOnly&lt;/string&gt;
+  &lt;string&gt;BlueprintCosmetic&lt;/string&gt;
+  &lt;string&gt;WithValidation&lt;/string&gt;
+  &lt;string&gt;ServiceRequest&lt;/string&gt;
+  &lt;string&gt;ServiceResponse&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="UENUM_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;BlueprintType&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="USTRUCT_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Atomic&lt;/string&gt;
+  &lt;string&gt;BlueprintType&lt;/string&gt;
+  &lt;string&gt;Immutable&lt;/string&gt;
+  &lt;string&gt;NoExport&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="UCLASS_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Abstract&lt;/string&gt;
+  &lt;string&gt;AdvancedClassDisplay&lt;/string&gt;
+  &lt;string&gt;Blueprintable&lt;/string&gt;
+  &lt;string&gt;BlueprintType&lt;/string&gt;
+  &lt;string&gt;CollapseCategories&lt;/string&gt;
+  &lt;string&gt;Const&lt;/string&gt;
+  &lt;string&gt;ConversionRoot&lt;/string&gt;
+  &lt;string&gt;CustomConstructor&lt;/string&gt;
+  &lt;string&gt;DefaultToInstanced&lt;/string&gt;
+  &lt;string&gt;Deprecated&lt;/string&gt;
+  &lt;string&gt;DontAutoCollapseCategories&lt;/string&gt;
+  &lt;string&gt;DontCollapseCategories&lt;/string&gt;
+  &lt;string&gt;EditInlineNew&lt;/string&gt;
+  &lt;string&gt;HideDropdown&lt;/string&gt;
+  &lt;string&gt;Intrinsic&lt;/string&gt;
+  &lt;string&gt;MinimalAPI&lt;/string&gt;
+  &lt;string&gt;NoExport&lt;/string&gt;
+  &lt;string&gt;NonTransient&lt;/string&gt;
+  &lt;string&gt;NotBlueprintable&lt;/string&gt;
+  &lt;string&gt;NotPlaceable&lt;/string&gt;
+  &lt;string&gt;PerObjectConfig&lt;/string&gt;
+  &lt;string&gt;Placeable&lt;/string&gt;
+  &lt;string&gt;Transient&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
