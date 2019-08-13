@@ -10,14 +10,15 @@
         HasHelpButton="True"
         HasMaximizeButton="False" 
         HasMinimizeButton="False" 
-        Title="Generate Specifier" MaxHeight="240" MinHeight="148" MaxWidth="340" MinWidth="300" ResizeMode="NoResize" ShowInTaskbar="False" SnapsToDevicePixels="True" WindowStartupLocation="CenterOwner" Topmost="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" SizeToContent="WidthAndHeight" IsTabStop="False">
+        Title="Generate Specifier" MaxHeight="240" MinHeight="158" MaxWidth="340" MinWidth="300" ResizeMode="NoResize" ShowInTaskbar="False" SnapsToDevicePixels="True" WindowStartupLocation="CenterOwner" Topmost="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" SizeToContent="WidthAndHeight" IsTabStop="False">
     <StackPanel Margin="4">
-        <ListBox x:Name="specList" Height="111">
+        <ListBox x:Name="specList" Height="131">
             <ListBoxItem Content="UPROPERTY" IsSelected="True" TabIndex="1"/>
             <ListBoxItem Content="UFUNCTION" TabIndex="2"/>
             <ListBoxItem Content="UCLASS" TabIndex="3"/>
             <ListBoxItem Content="USTRUCT" TabIndex="4"/>
             <ListBoxItem Content="UFUNCTION" TabIndex="5"/>
+            <ListBoxItem Content="UINTERFACE" TabIndex="6"/>
         </ListBox>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             <Button x:Name="Ok_Button" Content="Ok" Height="29" VerticalAlignment="Bottom" Width="79" IsDefault="True" Click="Ok_Button_Click" Margin="0,4" HorizontalAlignment="Right"/>

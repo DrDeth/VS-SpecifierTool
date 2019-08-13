@@ -40,37 +40,43 @@
   &lt;string&gt;TextExportTransient&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
-    <Setting Name="UFUNCTION_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
-      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;BlueprintImplementableEvent&lt;/string&gt;
-  &lt;string&gt;BlueprintNativeEvent&lt;/string&gt;
-  &lt;string&gt;SealedEvent&lt;/string&gt;
-  &lt;string&gt;Exec&lt;/string&gt;
-  &lt;string&gt;Server&lt;/string&gt;
-  &lt;string&gt;Client&lt;/string&gt;
-  &lt;string&gt;NetMulticast&lt;/string&gt;
-  &lt;string&gt;Reliable&lt;/string&gt;
-  &lt;string&gt;Unreliable&lt;/string&gt;
-  &lt;string&gt;BlueprintPure&lt;/string&gt;
-  &lt;string&gt;BlueprintCallable&lt;/string&gt;
-  &lt;string&gt;BlueprintAuthorityOnly&lt;/string&gt;
-  &lt;string&gt;BlueprintCosmetic&lt;/string&gt;
-  &lt;string&gt;WithValidation&lt;/string&gt;
-  &lt;string&gt;ServiceRequest&lt;/string&gt;
-  &lt;string&gt;ServiceResponse&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
-    </Setting>
     <Setting Name="UENUM_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;string&gt;BlueprintType&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
+    <Setting Name="UFUNCTION_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;BlueprintAuthorityOnly&lt;/string&gt;
+  &lt;string&gt;BlueprintCallable&lt;/string&gt;
+  &lt;string&gt;BlueprintCosmetic&lt;/string&gt;
+  &lt;string&gt;BlueprintGetter&lt;/string&gt;
+  &lt;string&gt;BlueprintImplementableEvent&lt;/string&gt;
+  &lt;string&gt;BlueprintInternalUseOnly&lt;/string&gt;
+  &lt;string&gt;BlueprintNativeEvent&lt;/string&gt;
+  &lt;string&gt;BlueprintPure&lt;/string&gt;
+  &lt;string&gt;BlueprintSetter&lt;/string&gt;
+  &lt;string&gt;CallInEditor&lt;/string&gt;
+  &lt;string&gt;Client&lt;/string&gt;
+  &lt;string&gt;CustomThunk&lt;/string&gt;
+  &lt;string&gt;Exec&lt;/string&gt;
+  &lt;string&gt;NetMulticast&lt;/string&gt;
+  &lt;string&gt;Reliable&lt;/string&gt;
+  &lt;string&gt;SealedEvent&lt;/string&gt;
+  &lt;string&gt;ServiceRequest&lt;/string&gt;
+  &lt;string&gt;ServiceResponse&lt;/string&gt;
+  &lt;string&gt;Server&lt;/string&gt;
+  &lt;string&gt;Unreliable&lt;/string&gt;
+  &lt;string&gt;WithValidation&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
     <Setting Name="USTRUCT_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;string&gt;Atomic&lt;/string&gt;
+  &lt;string&gt;Blueprintable&lt;/string&gt;
   &lt;string&gt;BlueprintType&lt;/string&gt;
   &lt;string&gt;Immutable&lt;/string&gt;
   &lt;string&gt;NoExport&lt;/string&gt;
@@ -89,7 +95,6 @@
   &lt;string&gt;CustomConstructor&lt;/string&gt;
   &lt;string&gt;DefaultToInstanced&lt;/string&gt;
   &lt;string&gt;Deprecated&lt;/string&gt;
-  &lt;string&gt;DontAutoCollapseCategories&lt;/string&gt;
   &lt;string&gt;DontCollapseCategories&lt;/string&gt;
   &lt;string&gt;EditInlineNew&lt;/string&gt;
   &lt;string&gt;HideDropdown&lt;/string&gt;
@@ -102,6 +107,13 @@
   &lt;string&gt;PerObjectConfig&lt;/string&gt;
   &lt;string&gt;Placeable&lt;/string&gt;
   &lt;string&gt;Transient&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="UINTERFACE_Specifiers" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;BlueprintType&lt;/string&gt;
+  &lt;string&gt;MinimalAPI&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
   </Settings>

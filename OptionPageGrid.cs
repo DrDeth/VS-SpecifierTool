@@ -17,6 +17,7 @@ namespace SpecifierTool
             UENUM_Strings = Properties.Settings.Default.UENUM_Specifiers;
             USTRUCT_Strings = Properties.Settings.Default.USTRUCT_Specifiers;
             UFUNCTION_Strings = Properties.Settings.Default.UFUNCTION_Specifiers;
+            UINTERFACE_Strings = Properties.Settings.Default.UINTERFACE_Specifiers;
         }
 
         private System.Collections.Specialized.StringCollection UPROPERTY_Strings;
@@ -24,6 +25,7 @@ namespace SpecifierTool
         private System.Collections.Specialized.StringCollection UENUM_Strings;
         private System.Collections.Specialized.StringCollection USTRUCT_Strings;
         private System.Collections.Specialized.StringCollection UFUNCTION_Strings;
+        private System.Collections.Specialized.StringCollection UINTERFACE_Strings;
 
         [Category("Specifiers")]
         [DisplayName("UPROPERTY Specifiers")]
@@ -68,6 +70,15 @@ namespace SpecifierTool
         {
             get { return UFUNCTION_Strings; }
             set { UFUNCTION_Strings = value; }
+        }
+
+        [Category("Specifiers")]
+        [DisplayName("UINTERFACE Specifiers")]
+        [Description("List of specifiers that appear for UINTERFACE")]
+        public System.Collections.Specialized.StringCollection UINTERFACEList
+        {
+            get { return UINTERFACE_Strings; }
+            set { UINTERFACE_Strings = value; }
         }
     }
 }

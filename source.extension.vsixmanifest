@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="SpecifierTool.Company.62bc3ba5-cc4c-4d48-a803-4bf417ce27db" Version="1.4.1" Language="en-US" Publisher="Nick George, Matthew Leach" />
+        <Identity Id="SpecifierTool.Company.62bc3ba5-cc4c-4d48-a803-4bf417ce27db" Version="1.4.2" Language="en-US" Publisher="Nick George, Matthew Leach" />
         <DisplayName>SpecifierTool</DisplayName>
         <Description xml:space="preserve">Specifier Tag Generator and Editor for Unreal Engine 4 C++ projects</Description>
         <Icon>Resources\icon.png</Icon>
@@ -12,7 +12,7 @@
         <InstallationTarget Version="[14.0,17.0)" Id="Microsoft.VisualStudio.Enterprise" />
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7,)" />        
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7,)" />
     </Dependencies>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />

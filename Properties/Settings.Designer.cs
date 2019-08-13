@@ -72,36 +72,6 @@ namespace SpecifierTool.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
-<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>BlueprintImplementableEvent</string>
-  <string>BlueprintNativeEvent</string>
-  <string>SealedEvent</string>
-  <string>Exec</string>
-  <string>Server</string>
-  <string>Client</string>
-  <string>NetMulticast</string>
-  <string>Reliable</string>
-  <string>Unreliable</string>
-  <string>BlueprintPure</string>
-  <string>BlueprintCallable</string>
-  <string>BlueprintAuthorityOnly</string>
-  <string>BlueprintCosmetic</string>
-  <string>WithValidation</string>
-  <string>ServiceRequest</string>
-  <string>ServiceResponse</string>
-</ArrayOfString>")]
-        public global::System.Collections.Specialized.StringCollection UFUNCTION_Specifiers {
-            get {
-                return ((global::System.Collections.Specialized.StringCollection)(this["UFUNCTION_Specifiers"]));
-            }
-            set {
-                this["UFUNCTION_Specifiers"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
             "tring>BlueprintType</string>\r\n</ArrayOfString>")]
@@ -118,7 +88,43 @@ namespace SpecifierTool.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
 <ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
+  <string>BlueprintAuthorityOnly</string>
+  <string>BlueprintCallable</string>
+  <string>BlueprintCosmetic</string>
+  <string>BlueprintGetter</string>
+  <string>BlueprintImplementableEvent</string>
+  <string>BlueprintInternalUseOnly</string>
+  <string>BlueprintNativeEvent</string>
+  <string>BlueprintPure</string>
+  <string>BlueprintSetter</string>
+  <string>CallInEditor</string>
+  <string>Client</string>
+  <string>CustomThunk</string>
+  <string>Exec</string>
+  <string>NetMulticast</string>
+  <string>Reliable</string>
+  <string>SealedEvent</string>
+  <string>ServiceRequest</string>
+  <string>ServiceResponse</string>
+  <string>Server</string>
+  <string>Unreliable</string>
+  <string>WithValidation</string>
+</ArrayOfString>")]
+        public global::System.Collections.Specialized.StringCollection UFUNCTION_Specifiers {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["UFUNCTION_Specifiers"]));
+            }
+            set {
+                this["UFUNCTION_Specifiers"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
   <string>Atomic</string>
+  <string>Blueprintable</string>
   <string>BlueprintType</string>
   <string>Immutable</string>
   <string>NoExport</string>
@@ -146,7 +152,6 @@ namespace SpecifierTool.Properties {
   <string>CustomConstructor</string>
   <string>DefaultToInstanced</string>
   <string>Deprecated</string>
-  <string>DontAutoCollapseCategories</string>
   <string>DontCollapseCategories</string>
   <string>EditInlineNew</string>
   <string>HideDropdown</string>
@@ -166,6 +171,20 @@ namespace SpecifierTool.Properties {
             }
             set {
                 this["UCLASS_Specifiers"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
+            "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
+            "tring>BlueprintType</string>\r\n  <string>MinimalAPI</string>\r\n</ArrayOfString>")]
+        public global::System.Collections.Specialized.StringCollection UINTERFACE_Specifiers {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["UINTERFACE_Specifiers"]));
+            }
+            set {
+                this["UINTERFACE_Specifiers"] = value;
             }
         }
     }
