@@ -10,6 +10,8 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Runtime.InteropServices;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
@@ -35,12 +37,12 @@ namespace SpecifierTool
 	/// To get loaded into VS, the package must be referred by &lt;Asset Type="Microsoft.VisualStudio.VsPackage" ...&gt; in .vsixmanifest file.
 	/// </para>
 	/// </remarks>
-	[PackageRegistration(UseManagedResourcesOnly = true)]
+	[PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
 	[InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About
 	[ProvideMenuResource("Menus.ctmenu", 1)]
 	[Guid(EditSpecifiersPackage.PackageGuidString)]
 	[SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-	public sealed class EditSpecifiersPackage : Package
+	public sealed class EditSpecifiersPackage : AsyncPackage
 	{
 		/// <summary>
 		/// EditSpecifiersPackage GUID string.
@@ -58,18 +60,75 @@ namespace SpecifierTool
 			// initialization is the Initialize method.
 		}
 
-		#region Package Members
+        private static EditSpecifiersPackage _instance = null;
+        public static EditSpecifiersPackage Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new EditSpecifiersPackage();
+                return _instance;
+            }
+        }
 
-		/// <summary>
-		/// Initialization of the package; this method is called right after the package is sited, so this is the place
-		/// where you can put all the initialization code that rely on services provided by VisualStudio.
-		/// </summary>
-		protected override void Initialize()
-		{
+        #region Package Members
+
+        /// <summary>
+        /// Initialization of the package; this method is called right after the package is sited, so this is the place
+        /// where you can put all the initialization code that rely on services provided by VisualStudio.
+        /// </summary>
+        protected override System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
+        {
 			EditSpecifiers.Initialize(this);
-			base.Initialize();
+            _instance = this;
+			return base.InitializeAsync(cancellationToken, progress);
 		}
 
-		#endregion
-	}
+        public System.Collections.Specialized.StringCollection PropertySpecifierList
+        {
+            get
+            {
+                OptionPageGrid page = (OptionPageGrid)GetDialogPage(typeof(OptionPageGrid));
+                return page.UPROPERTYList;
+            }
+        }
+
+        public System.Collections.Specialized.StringCollection ClassSpecifierList
+        {
+            get
+            {
+                OptionPageGrid page = (OptionPageGrid)GetDialogPage(typeof(OptionPageGrid));
+                return page.UCLASSList;
+            }
+        }
+
+        public System.Collections.Specialized.StringCollection EnumSpecifierList
+        {
+            get
+            {
+                OptionPageGrid page = (OptionPageGrid)GetDialogPage(typeof(OptionPageGrid));
+                return page.UENUMList;
+            }
+        }
+
+        public System.Collections.Specialized.StringCollection StructSpecifierList
+        {
+            get
+            {
+                OptionPageGrid page = (OptionPageGrid)GetDialogPage(typeof(OptionPageGrid));
+                return page.USTRUCTList;
+            }
+        }
+
+        public System.Collections.Specialized.StringCollection FunctionSpecifierList
+        {
+            get
+            {
+                OptionPageGrid page = (OptionPageGrid)GetDialogPage(typeof(OptionPageGrid));
+                return page.UFUNCTIONList;
+            }
+        }
+
+        #endregion
+    }
 }

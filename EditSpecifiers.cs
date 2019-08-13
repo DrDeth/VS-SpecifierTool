@@ -104,6 +104,7 @@ namespace SpecifierTool
 			// code to get access to the editor's currently selected text cribbed from
 			// http://msdn.microsoft.com/en-us/library/dd884850.aspx
 			IVsTextManager txtMgr = (IVsTextManager)this.ServiceProvider.GetService(typeof(SVsTextManager));
+            if (txtMgr == null) return null;
 			IVsTextView vTextView = null;
 			int mustHaveFocus = 1;
 			txtMgr.GetActiveView(mustHaveFocus, null, out vTextView);
@@ -146,7 +147,11 @@ namespace SpecifierTool
 				OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
 				*/
 
+            
+
 			DTE dte = (DTE)this.ServiceProvider.GetService(typeof(DTE));
+            if (dte == null) return;
+
 			string text = "";
 			string parameters = "";
 
@@ -255,7 +260,12 @@ namespace SpecifierTool
 
 		private void GenerateSpecifierCallback(object sender, EventArgs e)
 		{
-			GeneratorDialog dialog = new GeneratorDialog();
+            //ThreadHelper.JoinableTaskFactory.Run(async () =>
+            //{
+            //    await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+            //});
+
+            GeneratorDialog dialog = new GeneratorDialog();
 			dialog.ShowModal();
 
 			if(dialog.ReturnCode == EReturnCode.RETURN_OK)
@@ -280,10 +290,13 @@ namespace SpecifierTool
 				if(dialog2.ReturnCode == EReturnCode.RETURN_OK)
 				{
 					if(!string.IsNullOrWhiteSpace(dialog2.OutputResult))
-					{
-						DTE dte = (DTE)this.ServiceProvider.GetService(typeof(DTE));
-						var txt = (TextSelection)dte.ActiveDocument.Selection;
-						txt.Text = dialog2.OutputResult;
+					{                        
+                        DTE dte = (DTE)this.ServiceProvider.GetService(typeof(DTE));
+                        if (dte != null)
+                        {
+                            var txt = (TextSelection)dte.ActiveDocument.Selection;
+                            txt.Text = dialog2.OutputResult;
+                        }
 					}
 				}
 			}

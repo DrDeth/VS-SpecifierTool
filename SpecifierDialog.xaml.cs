@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.PlatformUI;
-using Microsoft.Practices.ServiceLocation;
+//using Microsoft.Practices.ServiceLocation;
 using System.Collections.ObjectModel;
 using System.ComponentModel.Design;
 using System.Globalization;
@@ -107,19 +107,19 @@ namespace SpecifierTool
 			switch(mode)
 			{
 			case ESpecifierMode.MODE_UPROPERTY:
-				specifierList = SpecifiersPackage.Instance.PropertySpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
+				specifierList = EditSpecifiersPackage.Instance.PropertySpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
 				break;
 			case ESpecifierMode.MODE_UENUM:
-				specifierList = SpecifiersPackage.Instance.EnumSpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
+				specifierList = EditSpecifiersPackage.Instance.EnumSpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
 				break;
 			case ESpecifierMode.MODE_USTRUCT:
-				specifierList = SpecifiersPackage.Instance.StructSpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
+				specifierList = EditSpecifiersPackage.Instance.StructSpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
 				break;
 			case ESpecifierMode.MODE_UCLASS:
-				specifierList = SpecifiersPackage.Instance.ClassSpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
+				specifierList = EditSpecifiersPackage.Instance.ClassSpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
 				break;
 			case ESpecifierMode.MODE_UFUNCTION:
-				specifierList = SpecifiersPackage.Instance.FunctionSpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
+				specifierList = EditSpecifiersPackage.Instance.FunctionSpecifierList; //Properties.Settings.Default.UPROPERTY_Specifiers;
 				break;
 			}
 
