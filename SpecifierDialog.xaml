@@ -10,10 +10,14 @@
         HasHelpButton="True"
         HasMaximizeButton="False" 
         HasMinimizeButton="False" 
-        Title="Edit Specifiers" MaxHeight="550" MinHeight="500" MaxWidth="550" Width="535" MinWidth="500" ResizeMode="NoResize" ShowInTaskbar="False" SnapsToDevicePixels="True" WindowStartupLocation="CenterOwner" Topmost="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" SizeToContent="WidthAndHeight" Height="512">
+        Title="Edit Specifiers" 
+        MinHeight="500" MaxHeight="550" 
+        MinWidth="500" MaxWidth="550" 
+        Width="535"  
+        ResizeMode="CanResizeWithGrip" ShowInTaskbar="False" SnapsToDevicePixels="True" WindowStartupLocation="CenterOwner" Topmost="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" SizeToContent="WidthAndHeight" Height="512">
     <StackPanel Margin="4">
-        <StackPanel Height="435" Width="512" Orientation="Horizontal" Margin="0,0,-14,0" HorizontalAlignment="Left">
-            <ListBox x:Name="SpecifierListBox" Width="202" ItemsSource="{Binding TheList}" Height="435" VerticalContentAlignment="Top" ClipToBounds="True" Margin="0">
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+            <ListBox x:Name="SpecifierListBox" ItemsSource="{Binding TheList}" Height="435" VerticalContentAlignment="Top" ClipToBounds="True" Margin="0" MinWidth="200" Width="220">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <CheckBox x:Name="CheckBoxZone" Content="{Binding TheText}"
@@ -24,6 +28,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
+            <GridSplitter />
             <GroupBox x:Name="groupBox" Header="Meta/Advanced Options" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Margin="8,5" Height="425" HorizontalContentAlignment="Stretch" Padding="0,0,4,0">
                 <ScrollViewer x:Name="MetaScroller" Margin="0" CanContentScroll="True">
                     <StackPanel x:Name="metaPanel" Height="403" Width="251" CanVerticallyScroll="True" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left"/>

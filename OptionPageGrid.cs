@@ -30,6 +30,8 @@ namespace SpecifierTool
         [Category("Specifiers")]
         [DisplayName("UPROPERTY Specifiers")]
         [Description("List of specifiers that appear for UPROPERTY")]
+        [Editor(typeof(CustomStringCollectionEditor), typeof(System.Drawing.Design.UITypeEditor))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public System.Collections.Specialized.StringCollection UPROPERTYList
         {
             get { return UPROPERTY_Strings; }
@@ -39,6 +41,8 @@ namespace SpecifierTool
         [Category("Specifiers")]
         [DisplayName("UCLASS Specifiers")]
         [Description("List of specifiers that appear for UCLASS")]
+        [Editor(typeof(CustomStringCollectionEditor), typeof(System.Drawing.Design.UITypeEditor))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public System.Collections.Specialized.StringCollection UCLASSList
         {
             get { return UCLASS_Strings; }
@@ -48,6 +52,8 @@ namespace SpecifierTool
         [Category("Specifiers")]
         [DisplayName("UENUM Specifiers")]
         [Description("List of specifiers that appear for UENUM")]
+        [Editor(typeof(CustomStringCollectionEditor), typeof(System.Drawing.Design.UITypeEditor))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public System.Collections.Specialized.StringCollection UENUMList
         {
             get { return UENUM_Strings; }
@@ -57,6 +63,8 @@ namespace SpecifierTool
         [Category("Specifiers")]
         [DisplayName("USTRUCT Specifiers")]
         [Description("List of specifiers that appear for USTRUCT")]
+        [Editor(typeof(CustomStringCollectionEditor), typeof(System.Drawing.Design.UITypeEditor))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public System.Collections.Specialized.StringCollection USTRUCTList
         {
             get { return USTRUCT_Strings; }
@@ -66,6 +74,8 @@ namespace SpecifierTool
         [Category("Specifiers")]
         [DisplayName("UFUNCTION Specifiers")]
         [Description("List of specifiers that appear for UFUNCTION")]
+        [Editor(typeof(CustomStringCollectionEditor), typeof(System.Drawing.Design.UITypeEditor))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public System.Collections.Specialized.StringCollection UFUNCTIONList
         {
             get { return UFUNCTION_Strings; }
@@ -75,6 +85,8 @@ namespace SpecifierTool
         [Category("Specifiers")]
         [DisplayName("UINTERFACE Specifiers")]
         [Description("List of specifiers that appear for UINTERFACE")]
+        [Editor(typeof(CustomStringCollectionEditor), typeof(System.Drawing.Design.UITypeEditor))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public System.Collections.Specialized.StringCollection UINTERFACEList
         {
             get { return UINTERFACE_Strings; }

@@ -42,7 +42,9 @@ namespace SpecifierTool
 	[ProvideMenuResource("Menus.ctmenu", 1)]
 	[Guid(EditSpecifiersPackage.PackageGuidString)]
 	[SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-	public sealed class EditSpecifiersPackage : AsyncPackage
+    [ProvideOptionPage(typeof(OptionPageGrid),
+        "UE4 Specifiers Editor", "Specifier Editor Settings", 0, 0, true)]
+    public sealed class EditSpecifiersPackage : AsyncPackage
 	{
 		/// <summary>
 		/// EditSpecifiersPackage GUID string.
@@ -59,7 +61,7 @@ namespace SpecifierTool
 			// not sited yet inside Visual Studio environment. The place to do all the other
 			// initialization is the Initialize method.
 		}
-
+        
         private static EditSpecifiersPackage _instance = null;
         public static EditSpecifiersPackage Instance
         {
@@ -83,6 +85,10 @@ namespace SpecifierTool
             _instance = this;
 			return base.InitializeAsync(cancellationToken, progress);
 		}
+
+        #endregion
+
+        #region Specifier Lists
 
         public System.Collections.Specialized.StringCollection PropertySpecifierList
         {
